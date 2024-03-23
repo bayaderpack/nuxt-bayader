@@ -1,0 +1,45 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "cookiecontrol.css";
+
+@layer base {
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+h1 {
+
+  font-weight: 600;
+  /* max-width: 7em; */
+  font-size: 3.7rem;
+  border-bottom: 1px solid green;
+  width: fit-content;
+  text-align: left;
+
+
+}
+
+h2 {
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 500;
+  color: #4e4e4e;
+  border-bottom: 2px solid black;
+  margin-bottom: 22px;
+}
+
+h1 em {
+  font-style: normal;
+  font-weight: bold
+}
+
+
+h1 strong {
+  color: #c215ff
+}
