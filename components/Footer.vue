@@ -23,7 +23,7 @@
 </footer>
 <footer class="footer px-10 py-4 border-t bg-base-100 text-base-content border-base-300">
   <aside class="items-center grid-flow-col">
-    <p>© {{ new Date().getFullYear() }} - {{ $t("site.name") }} All rights reserved Bajro Lisic</p>
+    <p>© <span class="font-black" >2023-{{ new Date().getFullYear() }} </span> - {{ $t("site.name") }} All rights reserved <span class="font-black">Bajro Lisic</span></p>
   </aside>
 
 </footer>

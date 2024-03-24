@@ -67,10 +67,10 @@
 
 /* Control button */
 .cookieControl__ControlButton svg {
-  @apply text-gray-600 dark:text-gray-400;
+  @apply text-orange-700 dark:text-orange-700;
 }
 .cookieControl__ControlButton:hover svg {
-  @apply text-gray-800 dark:text-gray-200;
+  @apply text-orange-800 dark:text-orange-200;
 }
 .cookieControl__ControlButton:hover {
   @apply bg-white text-gray-700;

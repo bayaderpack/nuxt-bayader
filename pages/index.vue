@@ -14,7 +14,7 @@ useSeoMeta({
 <div class="hero min-h-[34rem]" style="background-image: url(bg.jpg); background-size: cover;">
   <div class="hero-content justify-start items-start w-full text-neutral-content">
     <div class="max-w-lg text-white bg-black p-8 rounded-box bg-opacity-70">
-      <h1 class="mb-5 text-3xl font-bold text-green-400">Bayader Aljazirah</h1>
+      <h1 class="mb-5 text-3xl font-bold text-accent">Bayader Aljazirah</h1>
       <p class="mb-5 text-5xl">Why we are your best option?</p>
       <button class="btn btn-success">Find out</button>
     </div>

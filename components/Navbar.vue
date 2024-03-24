@@ -8,18 +8,16 @@
     return {
       navigation: [
         { title: "pages.index.link", router: "/" },
-        { title: "Contact us", router: "/contact-us" },
+        { title: "pages.contact.link", router: "/contact-us" },
+        { title: "Dashboard", router: "/dashboard" },
         // { title: "Products", router: "/product",
         //   children: [
         //   { title: "Type", router: "/type" },
         //   { title: "Industry", router: "/industry" },
         //   ]
         // },
-        // { title: "Careers", router: "/Careers" },
-        // { title: "Guides", router: "/Guides" },
-        // { title: "Partners", router: "/Partners" },
+
         { title: "pages.about.link", router: "/about" },
-        // { title: "Contact us", router: "/contact-us" },
       ],
     };
   }
@@ -30,7 +28,7 @@
   const colorMode = useColorMode();
 const changeColor = () => {
   colorMode.preference = (!theme.value ? 'dark' : 'light')
-  console.log(colorMode.value)
+  // console.log(colorMode.value)
 }
 // console.log(colorMode.value)
 </script>
@@ -108,11 +106,11 @@ const changeColor = () => {
           <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
         </div>
       </div>
-      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  text-base-content">
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 dark:bg-base-300 rounded-box w-52  text-base-content dark:text-slate-50">
         <li>
           <a class="justify-between">
             Profile
-            <span class="badge">New</span>
+            <span class="badge badge-accent">New</span>
           </a>
         </li>
         <li><a>Settings</a></li>

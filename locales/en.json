@@ -63,8 +63,13 @@
         "title": "About us",
         "description": "About page"
       },
-      "link": "About-us",
+      "link": "About us",
       "title": "About us",
+      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
+    },
+    "contact": {
+      "link": "Contact us",
+      "title": "Contact us",
       "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
     },
     "minimal": {

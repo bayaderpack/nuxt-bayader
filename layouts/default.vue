@@ -9,7 +9,7 @@ const localePath = useLocalePath()
 </script>
 <template>
   <div
-    class="min-h-screen bg-orange-100"
+    class="min-h-screen "
   >
     <Navbar />
     <!--
