@@ -16,7 +16,7 @@ useSeoMeta({
     <div class="max-w-lg text-white bg-black p-8 rounded-box bg-opacity-70">
       <h1 class="mb-5 text-3xl font-bold text-accent">Bayader Aljazirah</h1>
       <p class="mb-5 text-5xl">Why we are your best option?</p>
-      <button class="btn btn-success">Find out</button>
+      <button class="btn btn-accent">Find out</button>
     </div>
   </div>
 </div>
@@ -29,87 +29,25 @@ useSeoMeta({
 
 
 
-      <div class="card bg-base-100 shadow-lg hover:scale-110 transition-all duration-300">
-  <figure><img class="w-full h-auto" src="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Fluxury%2Fluxury_category_thumbnail.jpg&w=128&q=75" alt="Luxury Box"/></figure>
-  <div class="card-body p-2 ">
-    <h2 class="card-title text-green-600">Luxury Box<br /> <br /><br /></h2>
 
-    <div class="card-actions justify-end">
-      <button class="btn btn-success">Order your</button>
-    </div>
-  </div>
+<Card title="Luxury Box" image="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Fluxury%2Fluxury_category_thumbnail.jpg&w=128&q=75" button="Add to cart"/>
+<Card title="Pizza" image="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Fpizza%2Fpizza_category_thumbnail.jpg&w=128&q=75" button="Add to cart"/>
+<Card title="Bags" image="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Fbags%2Fbags_category_thumbnail.jpg&w=128&q=75" button="Add to cart"/>
+<Card title="Wrap paper" image="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Fwrap%2Fwrap_category_thumbnail.jpg&w=128&q=75" button="Add to cart"/>
 
-</div>
-<div class="card bg-base-100 shadow-lg hover:scale-110 transition-all duration-300">
-  <figure><img class="w-full h-auto" src="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Fpizza%2Fpizza_category_thumbnail.jpg&w=128&q=75" alt="Pizza"/></figure>
-  <div class="card-body p-2 ">
-    <h2 class="card-title text-green-600">Pizza<br /> <br /><br /></h2>
 
-    <div class="card-actions justify-end">
-      <button class="btn btn-success">Order your</button>
-    </div>
-  </div>
 
-</div>
-<div class="card bg-base-100 shadow-lg hover:scale-110 transition-all duration-300">
-  <figure><img class="w-full h-auto" src="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Fbags%2Fbags_category_thumbnail.jpg&w=128&q=75" alt="Bags"/></figure>
-  <div class="card-body p-2 ">
-    <h2 class="card-title text-green-600">Bags<br /> <br /><br /></h2>
-
-    <div class="card-actions justify-end">
-      <button class="btn btn-success">Order your</button>
-    </div>
-  </div>
-
-</div>
-<div class="card bg-base-100 shadow-lg hover:scale-110 transition-all duration-300">
-  <figure><img class="w-full h-auto" src="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Fwrap%2Fwrap_category_thumbnail.jpg&w=128&q=75" alt="Wrap paper"/></figure>
-  <div class="card-body p-2 ">
-    <h2 class="card-title text-green-600">Wrap paper<br /> <br /><br /></h2>
-
-    <div class="card-actions justify-end">
-      <button class="btn btn-success">Order your</button>
-    </div>
-  </div>
-
-</div>
 </div>
     </Tab>
     <Tab title="Industry">
+
+
 <div class="grid grid-cols-4 gap-12 px-16 w-full">
-<div class="card bg-base-100 shadow-lg hover:scale-110 transition-all duration-300">
-  <figure><img class="w-full h-auto" src="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Frestaurants%2Fresturants_category_thumbnail.jpg&w=128&q=75" alt="Restaurants & Coffee Shops"/></figure>
-  <div class="card-body p-2 ">
-    <h2 class="card-title text-green-600">Restaurants <br />& <br />Coffee Shops</h2>
 
-    <div class="card-actions justify-end">
-      <button class="btn btn-success">Order your</button>
-    </div>
-  </div>
+  <Card title="Restaurants & Coffee Shops" image="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Frestaurants%2Fresturants_category_thumbnail.jpg&w=128&q=75" button="Add to cart"/>
+<Card title="Sweets" image="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Fsweets%2Fsweets_category_thumbnail.jpg&w=128&q=75" button="Add to cart"/>
+<Card title="Cosmetics" image="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Fcosmetics%2Fcosmetics_category_thumbnail.jpg&w=128&q=75" button="Add to cart"/>
 
-</div>
-<div class="card bg-base-100 shadow-lg hover:scale-110 transition-all duration-300">
-  <figure><img class="w-full h-auto" src="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Fsweets%2Fsweets_category_thumbnail.jpg&w=128&q=75" alt="Sweets"/></figure>
-  <div class="card-body p-2 ">
-    <h2 class="card-title text-green-600">Sweets<br /> <br /><br /></h2>
-
-    <div class="card-actions justify-end">
-      <button class="btn btn-success">Order your</button>
-    </div>
-  </div>
-
-</div>
-<div class="card bg-base-100 shadow-lg hover:scale-110 transition-all duration-300">
-  <figure><img class="w-full h-auto" src="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Fcosmetics%2Fcosmetics_category_thumbnail.jpg&w=128&q=75" alt="Cosmetics"/></figure>
-  <div class="card-body p-2 ">
-    <h2 class="card-title text-green-600">Cosmetics<br /> <br /><br /></h2>
-
-    <div class="card-actions justify-end">
-      <button class="btn btn-success">Order your</button>
-    </div>
-  </div>
-
-</div>
 </div>
     </Tab>
   </Tabs>

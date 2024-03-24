@@ -1,10 +1,10 @@
 <template>
-<div class="card">
-  <figure><img :src="props.image" :alt="props.title" /></figure>
+<div class="card rounded-box shadow-lg">
+  <figure><img :src="props.image" :alt="props.title" class="object-cover w-min" /></figure>
   <div class="card-body">
-    <h2 class="card-title">{{ props.title}}!</h2>
+    <h2 class="card-title dark:text-slate-50">{{ props.title}}!</h2>
     <div class="card-actions justify-end">
-      <button class="btn btn-primary">{{ props.button }}</button>
+      <button class="btn btn-accent">{{ props.button }}</button>
     </div>
   </div>
 </div>

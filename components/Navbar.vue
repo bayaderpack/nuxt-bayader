@@ -106,7 +106,7 @@ const changeColor = () => {
           <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
         </div>
       </div>
-      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 dark:bg-base-300 rounded-box w-52  text-base-content dark:text-slate-50">
+      <ul tabindex="0" class="menu menu-md dropdown-content mt-3 z-[1] p-6 shadow bg-base-100 dark:bg-base-300 rounded-box w-72  text-base-content dark:text-slate-50">
         <li>
           <a class="justify-between">
             Profile
