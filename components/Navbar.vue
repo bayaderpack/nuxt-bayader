@@ -7,8 +7,8 @@
  const data = () => {
     return {
       navigation: [
-        { title: "pages.index.link", router: "/" },
-        { title: "pages.contact.link", router: "/contact-us" },
+        { title: "pages.index.title", router: "/" },
+        { title: "pages.contact.title", router: "/contact-us" },
         { title: "Dashboard", router: "/dashboard" },
         // { title: "Products", router: "/product",
         //   children: [
@@ -17,7 +17,7 @@
         //   ]
         // },
 
-        { title: "pages.about.link", router: "/about" },
+        { title: "pages.about.title", router: "/about" },
       ],
     };
   }

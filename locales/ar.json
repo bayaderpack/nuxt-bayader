@@ -35,7 +35,7 @@
         "title": "الصفحة الرئيسية",
         "description": "الصفحة الرئيسية"
       },
-      "link": "الرئيسية",
+      "title": "الرئيسية",
       "hero": {
         "title": "قالب Nuxt",
         "subtitle": "غير رسمي",
@@ -66,6 +66,11 @@
       "link": "معلومات",
       "title": "معلومات",
       "p": "لوريم إيبسوم دولور سيت، أميت كونسيكتور أديبايسينج إليت. إيك وإيستي آتكوي، هيك بوررو أوفيسيس فوجيت كواي ديسيرونت نوبيس دولوروم أوديت ديجنيسيموس كونسيكواتور إيسه مايوريس ريبيلات إمبيديت. كواي دولوروم إيد ريم؟"
+    },
+    "contact": {
+      "link": "Contact us",
+      "title": "ششؤس",
+      "p": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque iste atque, hic porro officiis fugit quae deserunt nobis dolorum odit dignissimos consequatur esse maiores repellat impedit. Quae dolorum id rem?"
     },
     "minimal": {
       "meta": {

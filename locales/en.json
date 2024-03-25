@@ -35,7 +35,7 @@
         "title": "Home",
         "description": "Home page"
       },
-      "link": "Home",
+      "title": "Home",
       "hero": {
         "title": "Nuxt Boilerplate",
         "subtitle": "Unofficial",
