@@ -10,7 +10,7 @@ const data = () => {
     navigation: [
       { title: "pages.index.title", router: "/" },
       { title: "pages.contact.title", router: "/contact-us" },
-      { title: "pages.dashboard.title", router: "/dashboard" },
+      { title: "pages.dashboard.title", router: "/dashboard", middle: 'auth' },
       // { title: "Products", router: "/product",
       //   children: [
       //   { title: "Type", router: "/type" },
@@ -19,11 +19,13 @@ const data = () => {
       // },
 
       { title: "pages.about.title", router: "/about" },
-      { title: "pages.login.title", router: "/auth/login" },
+      { title: "pages.login.title", router: "/auth/login", middle: 'guest' },
     ],
   };
 };
 const localePath = useLocalePath();
+
+
 
 const theme = ref(false);
 
@@ -32,6 +34,17 @@ const changeColor = () => {
   colorMode.preference = !theme.value ? "dark" : "light";
   // console.log(colorMode.value)
 };
+const token = useTokenStore();
+
+const filteredNavigation = computed(() => {
+      if (token.getToken) {
+        // User is authenticated, filter out 'guest' middleware links
+        return data().navigation.filter(link => link.middle !== 'guest');
+      } else {
+        // User is not authenticated, filter out 'auth' middleware links
+        return data().navigation.filter(link => link.middle !== 'auth');
+      }
+    });
 // console.log(colorMode.value)
 </script>
 
@@ -60,7 +73,7 @@ const changeColor = () => {
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-          <li v-for="link in data().navigation" :key="link.title">
+          <li v-for="link in filteredNavigation" :key="link.title">
             <details v-if="link.children && link.children.length" class="me-2">
               <summary
                 class="border border-base-content font-bold text-base-content"
@@ -115,55 +128,60 @@ const changeColor = () => {
         /></NuxtLink>
 
         <!-- <div class="flex-none"> -->
-        <div class="dropdown dropdown-end">
-          <div tabindex="0" role="button" class="btn btn-circle btn-ghost">
-            <div class="indicator">
-              <Icon
-                class="text-3xl text-base-content"
-                name="bitcoin-icons:cart-filled"
-              />
-              <span class="badge indicator-item badge-sm">8</span>
+        <div v-if="token.getToken ">
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-circle btn-ghost">
+              <div class="indicator">
+                <Icon
+                  class="text-3xl text-base-content"
+                  name="bitcoin-icons:cart-filled"
+                />
+                <span class="badge indicator-item badge-sm">8</span>
+              </div>
             </div>
-          </div>
-          <div
-            tabindex="0"
-            class="card dropdown-content card-compact z-[1] mt-3 w-52 bg-base-100 text-base-content shadow"
-          >
-            <div class="card-body">
-              <span class="text-lg font-bold">8 Items</span>
-              <span class="text-info">Subtotal: $999</span>
-              <div class="card-actions">
-                <button class="btn btn-primary btn-block">View cart</button>
+            <div
+              tabindex="0"
+              class="card dropdown-content card-compact z-[1] mt-3 w-52 bg-base-100 text-base-content shadow"
+            >
+              <div class="card-body">
+                <span class="text-lg font-bold">8 Items</span>
+                <span class="text-info">Subtotal: $999</span>
+                <div class="card-actions">
+                  <button class="btn btn-primary btn-block">View cart</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="dropdown dropdown-end">
-          <div
-            tabindex="0"
-            role="button"
-            class="avatar btn btn-circle btn-ghost"
-          >
-            <div class="w-10 rounded-full">
-              <img
-                alt="Tailwind CSS Navbar component"
-                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-              />
+          <div class="dropdown dropdown-end">
+            <div
+              tabindex="0"
+              role="button"
+              class="avatar btn btn-circle btn-ghost"
+            >
+              <div class="w-10 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                />
+              </div>
             </div>
+            <ul
+              tabindex="0"
+              class="menu dropdown-content menu-md z-[1] mt-3 w-72 rounded-box bg-base-100 p-6 text-base-content shadow dark:bg-base-300 dark:text-slate-50"
+            >
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge badge-accent">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a @click.prevent="logout()">Logout</a></li>
+            </ul>
           </div>
-          <ul
-            tabindex="0"
-            class="menu dropdown-content menu-md z-[1] mt-3 w-72 rounded-box bg-base-100 p-6 text-base-content shadow dark:bg-base-300 dark:text-slate-50"
-          >
-            <li>
-              <a class="justify-between">
-                Profile
-                <span class="badge badge-accent">New</span>
-              </a>
-            </li>
-            <li><a>Settings</a></li>
-            <li><a @click.prevent="logout()">Logout</a></li>
-          </ul>
+        </div>
+        <div v-else>
+          <NuxtLink :to="localePath('auth/login')" class="btn btn-accent">{{ $t('pages.login.title') }}</NuxtLink>
         </div>
       </div>
     </div>

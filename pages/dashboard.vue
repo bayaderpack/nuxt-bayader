@@ -1,16 +1,28 @@
 <script setup>
 import { useAuthStore } from "~/store/auth"; // import the auth store we just created
-const { getAllUsers } = useAuthStore(); // use logUserOut action from  auth store
+ // use logUserOut action from  auth store
 // const token = useCookie("token"); // useCookie new hook in nuxt 3
-
+const token = useTokenStore();
 definePageMeta({
   middleware: "auth", // this should match the name of the file inside the middleware directory
 });
-if (process.client) {
-  console.log(getAllUsers());
-}
+
+const { data, pending, error, refresh } = await useFetch('http://localhost:8080/api/user/get',{
+    headers: {
+          Accept: "application/json",
+          Authorization: `${token.getToken}`,
+        },
+  })
+
 </script>
 
 <template>
-  <div></div>
+  <div>
+<!-- {{token.getToken}} -->
+    <div v-for="user, key in data.users" :key="key">
+    <p>{{user.email}}</p>
+    <p>{{user.username}}</p>
+  </div>
+  </div>
+
 </template>
