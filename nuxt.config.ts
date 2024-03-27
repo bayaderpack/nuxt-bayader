@@ -20,7 +20,8 @@ export default defineNuxtConfig({
     "@dargmuesli/nuxt-cookie-control",
     "@nuxtjs/sitemap",
     "@nuxt/fonts",
-    '@nuxtjs/color-mode'
+    "@nuxtjs/color-mode",
+    "@pinia-plugin-persistedstate/nuxt",
   ],
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
@@ -28,8 +29,11 @@ export default defineNuxtConfig({
     exposeConfig: false,
     viewer: true,
   },
+  pinia: {
+    storesDirs: ["./store/**"],
+  },
   colorMode: {
-    classSuffix: ''
+    classSuffix: "",
   },
   postcss: {
     plugins: {
@@ -39,12 +43,10 @@ export default defineNuxtConfig({
     },
   },
   fonts: {
-    families: [
-      { name: 'Montserrat', provider: 'google' },
-    ],
+    families: [{ name: "Montserrat", provider: "google" }],
     defaults: {
-      weights: [100,200,300,400,500,600,700,800,900],
-      styles: ['normal', 'italic'],
+      weights: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      styles: ["normal", "italic"],
     },
   },
   site: {
@@ -74,14 +76,14 @@ export default defineNuxtConfig({
         iso: "en-US",
         file: "en.json",
         name: "English",
-        dir: "ltr"
+        dir: "ltr",
       },
       {
         code: "ar",
         iso: "ar-SA",
         file: "ar.json",
         name: "Arabic",
-        dir: "rtl"
+        dir: "rtl",
       },
     ],
     baseUrl: import.meta.env.VITE_BASE_URL,

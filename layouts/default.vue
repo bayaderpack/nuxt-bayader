@@ -5,21 +5,18 @@ useLocaleHead({
   addSeoAttributes: true,
 });
 
-const localePath = useLocalePath()
+const localePath = useLocalePath();
 </script>
 <template>
-  <div
-    class="min-h-screen "
-  >
+  <div class="min-h-screen">
     <Navbar />
     <!--
 
     Template below is intended to be removed..
 
   -->
-    <div class=" mt-16">
-
-        <slot />
+    <div class="mt-16">
+      <slot />
 
       <Footer />
     </div>
