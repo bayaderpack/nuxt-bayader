@@ -123,7 +123,7 @@ const filteredNavigation = computed(() => {
           class="btn btn-circle btn-ghost text-2xl text-base-content"
           :to="locale == 'ar' ? switchLocalePath('en') : switchLocalePath('ar')"
           ><Icon
-            :name="locale == 'ar' ? 'flag:sa-4x3' : 'flag:us-4x3'"
+            :name="locale != 'ar' ? 'flag:sa-4x3' : 'flag:us-4x3'"
             class=""
         /></NuxtLink>
 

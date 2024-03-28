@@ -25,7 +25,7 @@ useSeoMeta({
   <h1 class="heading-1">Select type or industry that you need</h1>
   <Tabs>
     <Tab title="Type">
-      <div class="grid grid-cols-4 gap-12 px-16 w-full">
+      <div class="flex justify-between px-16 gap-24 w-full">
 
 
 
@@ -42,7 +42,7 @@ useSeoMeta({
     <Tab title="Industry">
 
 
-<div class="grid grid-cols-4 gap-12 px-16 w-full">
+<div class="flex justify-between gap-24 px-16 w-full">
 
   <Card title="Restaurants & Coffee Shops" image="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Frestaurants%2Fresturants_category_thumbnail.jpg&w=128&q=75" button="Add to cart"/>
 <Card title="Sweets" image="https://bayaderpack.com/_next/image?url=https%3A%2F%2Fadmin.bayaderpack.com%2Fmedia%2Fcategories%2Fsweets%2Fsweets_category_thumbnail.jpg&w=128&q=75" button="Add to cart"/>

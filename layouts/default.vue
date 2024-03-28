@@ -15,7 +15,7 @@ const localePath = useLocalePath();
     Template below is intended to be removed..
 
   -->
-    <div class="mt-16">
+    <div class="">
       <slot />
 
       <Footer />

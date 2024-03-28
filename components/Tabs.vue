@@ -13,21 +13,26 @@ provide("activeTabHash", activeTabHash);
 </script>
 
 <template>
-  <div role="tablist" class="container tabs-boxed  tabs mt-12 flex items-start">
-    <a
-      role="tab"
-      class="tab h-auto px-6 py-2 text-3xl font-bold"
-      :class="{
-        '': tab.hash !== activeTabHash,
-        'tab-active !bg-accent  !text-white': tab.hash === activeTabHash,
-      }"
-      v-for="tab in tabs"
-      :key="tab.title"
-      @click="activeTabHash = tab.hash"
-    >
-      {{ tab.title }}
-    </a>
-    <div class="px-4 py-12">
+  <div
+    role="tablist"
+    class="container tabs-boxed tabs mt-12 flex flex-col items-start"
+  >
+    <div >
+      <a
+        role="tab"
+        class="tab h-auto px-6 py-2 text-3xl font-bold"
+        :class="{
+          'btn btn-ghost': tab.hash !== activeTabHash,
+          'btn btn-accent  ': tab.hash === activeTabHash,
+        }"
+        v-for="tab in tabs"
+        :key="tab.title"
+        @click="activeTabHash = tab.hash"
+      >
+        {{ tab.title }}
+      </a>
+    </div>
+    <div class="px-4 py-12 w-full">
       <slot />
     </div>
   </div>
